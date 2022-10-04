@@ -6,6 +6,5 @@ class PrimeNumber(AuditableBaseModel):
     is_prime_number: bool | None = False
 
     def calculate_is_prime_number(self):
-        number = self.number
-        for x in range(2, int(number / 2)):
-            return number % x == 0
+        for x in range(2, int(self.number / 2)):
+            return self.number % x == 0
