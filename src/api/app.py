@@ -1,7 +1,7 @@
 from fastapi.applications import FastAPI
 
-from api.routers.fibonacci import fibonacci_sequence
-from api.routers.prime import prime_number
+from src.api.routers.fibonacci import fibonacci_sequence
+from src.api.routers.prime import prime_number
 
 
 def create_instance() -> FastAPI:

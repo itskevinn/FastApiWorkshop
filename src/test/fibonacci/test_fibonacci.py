@@ -1,6 +1,6 @@
 import unittest
 
-from core.fibonacci.services.fibonacci_service import get_value_due_to_position
+from src.core.fibonacci.services.fibonacci_service import get_value_due_to_position
 
 
 class MyTestCase(unittest.TestCase):

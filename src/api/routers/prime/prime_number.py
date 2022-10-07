@@ -3,7 +3,7 @@ from typing import List
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
 
-from core.prime_numbers.services import prime_number_service
+from src.core.prime_numbers.services import prime_number_service
 
 router = APIRouter()
 

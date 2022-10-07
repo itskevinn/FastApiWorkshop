@@ -1,7 +1,7 @@
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
 
-from core.fibonacci.services import fibonacci_service
+from src.core.fibonacci.services import fibonacci_service
 
 router = APIRouter()
 

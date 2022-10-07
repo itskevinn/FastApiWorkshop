@@ -1,6 +1,6 @@
 import unittest
 
-from core.prime_numbers.services.prime_number_service import calculate_is_prime_number
+from src.core.prime_numbers.services.prime_number_service import calculate_is_prime_number
 
 
 class MyTestCase(unittest.TestCase):
