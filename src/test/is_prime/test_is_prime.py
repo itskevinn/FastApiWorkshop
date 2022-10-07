@@ -3,7 +3,7 @@ import unittest
 from src.core.prime_numbers.services.prime_number_service import calculate_is_prime_number
 
 
-class MyTestCase(unittest.TestCase):
+class TestPrime(unittest.TestCase):
     def testShouldReturnTrueIsPrimeNumber(self):
         self.assertEqual(calculate_is_prime_number(5), True)
 
@@ -15,6 +15,9 @@ class MyTestCase(unittest.TestCase):
 
     def testShouldReturnFalseIsNotIsAPrimeNumber(self):
         self.assertEqual(calculate_is_prime_number(4), False)
+
+    def testShouldReturnFalseIfGivenNumberIsNegative(self):
+        self.assertEqual(calculate_is_prime_number(-4), False)
 
 
 if __name__ == '__main__':
