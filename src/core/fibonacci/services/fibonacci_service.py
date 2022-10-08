@@ -1,11 +1,9 @@
-def get_value_due_to_position(number: int) -> int:
-    if type(number) != int or number <= 1:
-        return 0
+from src.core.fibonacci.model.fibonacci_model import FibonacciModel
 
-    number_init, end_number, sucesion = 1, 1, []
-    for x in range(number):
-        sucesion.append(number_init)
-        sucesion.append(end_number)
-        number_init = number_init + end_number
-        end_number = number_init + end_number
-    return sucesion[number]
+
+def get_value_due_to_position(number: int) -> FibonacciModel:
+
+    fibonacci_model = FibonacciModel(number)
+
+    return fibonacci_model.get_last_value_to_sequence()
+
