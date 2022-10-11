@@ -5,13 +5,10 @@ from src.core.fibonacci.services.fibonacci_service import get_value_due_to_posit
 
 class FibonacciTest(unittest.TestCase):
     def testItShouldReturnTheCorrectNumberDueToPosition(self):
-        self.assertEqual(get_value_due_to_position(2), 2)
+        self.assertEqual(get_value_due_to_position(1), 0)
 
-    def testItShouldReturn8InThePosition5(self):
-        self.assertEqual(get_value_due_to_position(5), 8)
-
-    def testItShouldReturn0IfNoValidNumberGiven(self):
-        self.assertEqual(get_value_due_to_position("hola"), 0)
+    def testItShouldReturn5InThePosition5(self):
+        self.assertEqual(get_value_due_to_position(5), 3)
 
     def testItShouldReturn0IfNumberIsLessThan1(self):
         self.assertEqual(get_value_due_to_position(-1), 0)
