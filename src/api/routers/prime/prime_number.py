@@ -1,4 +1,3 @@
-from typing import List
 
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
@@ -14,7 +13,7 @@ router = APIRouter()
     status_code=201,
     responses={201: {"description": "Calculated"}},
 )
-def create(
+def calculate(
         number: int
 ):
     """Calculates if the number is a prime number
